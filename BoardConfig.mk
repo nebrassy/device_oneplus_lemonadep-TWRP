@@ -29,4 +29,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_DENSITY := xxhdpi
 
 # inherit from the proprietary version
--include vendor/oneplus/lemonadep/BoardConfigVendor.mk
+include vendor/oneplus/lemonadep/BoardConfigVendor.mk
