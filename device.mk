@@ -35,6 +35,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 TARGET_SCREEN_HEIGHT := 3168
 TARGET_SCREEN_WIDTH := 1440
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from oneplus sm8250-common
