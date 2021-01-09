@@ -22,9 +22,6 @@ DEVICE_PATH := device/oneplus/instantnoodlep
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
-# Display
-TARGET_SCREEN_DENSITY := 560
-
 # Fingerprint
 SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_X = 604
 SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_Y = 2434
@@ -37,6 +34,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 
 # Recovery
+TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version

@@ -41,7 +41,8 @@ PRODUCT_COPY_FILES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.recovery.target.rc
 
 # OPFeature
 PRODUCT_COPY_FILES += \
