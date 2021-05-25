@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,23 +18,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from instantnoodlep device
-$(call inherit-product, device/oneplus/instantnoodlep/device.mk)
+# Inherit from lemonadep device
+$(call inherit-product, device/oneplus/lemonadep/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_instantnoodlep
-PRODUCT_DEVICE := instantnoodlep
+PRODUCT_NAME := lineage_lemonadep
+PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := IN2023
+PRODUCT_MODEL := LE2123
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus8Pro \
-    PRODUCT_NAME=OnePlus8Pro_EEA \
-    PRIVATE_BUILD_DESC="OnePlus8Pro-user 11   release-keys"
+    PRODUCT_DEVICE=OnePlus9Pro \
+    PRODUCT_NAME=OnePlus9Pro_EEA \
+    PRIVATE_BUILD_DESC="OnePlus9Pro-user 11   release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus8Pro/OnePlus8Pro:10/QKQ1.191222.002/2005301332:user/release-keys
+BUILD_FINGERPRINT := OnePlus/OnePlus9Pro_EEA/OnePlus9Pro:11/RKQ1.201105.002/2105011307:user/release-keys

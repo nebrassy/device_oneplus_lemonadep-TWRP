@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +14,18 @@
 # limitations under the License.
 #
 
-# Inherit from oneplus sm8250-common
--include device/oneplus/sm8250-common/BoardConfigCommon.mk
+# Inherit from oneplus sm8350-common
+-include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/instantnoodlep
+DEVICE_PATH := device/oneplus/lemonadep
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Fingerprint
-SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_X = 604
-SOONG_CONFIG_ONEPLUS_KONA_FOD_POS_Y = 2434
-SOONG_CONFIG_ONEPLUS_KONA_FOD_SIZE = 232
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_POS_X = 604
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_POS_Y = 2434
+SOONG_CONFIG_ONEPLUS_LAHAINA_FOD_SIZE = 232
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -47,4 +47,4 @@ TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
--include vendor/oneplus/instantnoodlep/BoardConfigVendor.mk
+-include vendor/oneplus/lemonadep/BoardConfigVendor.mk
