@@ -28,5 +28,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 TARGET_RECOVERY_DENSITY := xxhdpi
 
+NEED_KERNEL_MODULE_RECOVERY := true
+
 # inherit from the proprietary version
--include vendor/oneplus/lemonadep/BoardConfigVendor.mk
+#-include vendor/oneplus/lemonadep/BoardConfigVendor.mk
