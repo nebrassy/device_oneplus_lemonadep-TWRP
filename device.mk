@@ -93,6 +93,7 @@ TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
 TW_HAS_EDL_MODE := true
 TW_EXCLUDE_APEX := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/msm-therm/temp"
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
