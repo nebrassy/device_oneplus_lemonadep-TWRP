@@ -49,9 +49,9 @@ install-touch()
     fi
 
     echo "loading vendor touchscreen modules"
-    for module in op_cmdline project_info fingerprint_detect gf_spi_driver oplus_chg touchscreen
+    for module in $(modprobe -D -d /vendor/lib/modules touchscreen aw8697 | grep modules)
     do
-        insmod /vendor/lib/modules/$module.ko
+        insmod /vendor/lib/modules/$(basename $module)
     done
 }
 
@@ -59,5 +59,6 @@ copy-modules
 install-touch
 
 exit 0
+
 
 
