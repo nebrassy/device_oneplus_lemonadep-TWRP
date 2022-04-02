@@ -32,3 +32,6 @@ NEED_KERNEL_MODULE_RECOVERY := true
 
 # inherit from the proprietary version
 #-include vendor/oneplus/lemonadep/BoardConfigVendor.mk
+
+# build broken
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
