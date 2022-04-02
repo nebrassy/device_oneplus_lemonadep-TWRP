@@ -24,3 +24,5 @@ NEED_KERNEL_MODULE_RECOVERY := true
 # Include the proprietary files BoardConfig.
 #include vendor/oneplus/lemonadep/BoardConfigVendor.mk
 
+# build broken
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
